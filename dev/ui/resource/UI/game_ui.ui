@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>board</class>
+ <widget class="QWidget" name="board">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>767</width>
+    <height>767</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>767</width>
+    <height>767</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>767</width>
+    <height>767</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Python五子棋</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#board{
+border-image: url(:/index/images/board.png);
+}</string>
+  </property>
+  <widget class="QPushButton" name="setting_button">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>720</y>
+     <width>60</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>45</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 14pt &quot;方正舒体&quot;;
+    
+	
+	background-color: rgba(169, 226, 223, 0);
+	border-radius: 10px
+}
+QPushButton:hover{
+    background-color: rgba(172, 206, 228, 128);
+}
+QPushButton:pressed{
+    
+	background-color: rgba(176, 184, 230, 228);
+}</string>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="return_mainmenu_button">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>634</x>
+     <y>720</y>
+     <width>121</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>65</width>
+     <height>45</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 14pt &quot;方正舒体&quot;;
+    
+	
+	background-color: rgba(169, 226, 223, 0);
+	border-radius: 10px
+}
+QPushButton:hover{
+    background-color: rgba(172, 206, 228, 128);
+}
+QPushButton:pressed{
+    
+	background-color: rgba(176, 184, 230, 228);
+}</string>
+   </property>
+   <property name="text">
+    <string>返回主菜单</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="player_image">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>0</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/index/images/cur_black.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="player_lable">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>0</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;方正舒体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>执子：</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>290</y>
+     <width>202</width>
+     <height>137</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="setting_menu">
+    <property name="spacing">
+     <number>25</number>
+    </property>
+    <item>
+     <widget class="QCheckBox" name="music_checkbox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>55</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{
+	font: 16pt &quot;方正舒体&quot;;
+	background-color: rgba(169, 226, 223, 228);
+	border-radius: 10px
+}
+QCheckBox::indicator {
+	width: 60px; height: 30px; 
+}
+QCheckBox::indicator:unchecked{
+	background:url(:/index/images/switch_false_small.png)
+}
+QCheckBox::indicator:checked{
+	background:url(:/index/images/switch_true_small.png)
+}</string>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>背景音乐</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="tristate">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="sound_checkbox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>55</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{
+	font: 16pt &quot;方正舒体&quot;;
+	background-color: rgba(169, 226, 223, 228);
+	border-radius: 10px
+}
+QCheckBox::indicator {
+	width: 60px; height: 30px; 
+}
+QCheckBox::indicator:unchecked{
+	background:url(:/index/images/switch_false_small.png)
+}
+QCheckBox::indicator:checked{
+	background:url(:/index/images/switch_true_small.png)
+}</string>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>点击音效</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="tristate">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../index.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>return_mainmenu_button</sender>
+   <signal>clicked()</signal>
+   <receiver>board</receiver>
+   <slot>return_main_menu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>724</x>
+     <y>724</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>642</x>
+     <y>643</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>setting_button</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>music_checkbox</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>727</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>315</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>setting_button</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>sound_checkbox</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>735</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>304</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>setting()</slot>
+  <slot>return_main_menu()</slot>
+ </slots>
+</ui>

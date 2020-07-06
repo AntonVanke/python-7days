@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="index">
+    <file>images/switch_false_small.png</file>
+    <file>images/switch_true_small.png</file>
+    <file>images/switch_false.png</file>
+    <file>images/switch_true.png</file>
+    <file>images/board.png</file>
+    <file>images/cur_black.png</file>
+    <file>images/cur_white.png</file>
+  </qresource>
+</RCC>
