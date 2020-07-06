@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_menu</class>
+ <widget class="QWidget" name="main_menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>767</width>
+    <height>767</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>766</width>
+    <height>767</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>767</width>
+    <height>767</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Python五子棋</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#main_menu{
+border-image: url(:/index/images/board.png);
+}</string>
+  </property>
+  <widget class="QPushButton" name="about_button">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>720</y>
+     <width>65</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>65</width>
+     <height>45</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 14pt &quot;方正舒体&quot;;
+    
+	
+	background-color: rgba(169, 226, 223, 0);
+	border-radius: 10px
+}
+QPushButton:hover{
+    background-color: rgba(172, 206, 228, 128);
+}
+QPushButton:pressed{
+    
+	background-color: rgba(176, 184, 230, 228);
+}</string>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>220</y>
+     <width>191</width>
+     <height>509</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="verticalSpacing">
+     <number>35</number>
+    </property>
+    <item row="0" column="0" colspan="2">
+     <widget class="QPushButton" name="human_computer_mode_button">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>55</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 14pt &quot;方正舒体&quot;;
+    
+	
+	background-color: rgba(169, 226, 223, 228);
+	border-radius: 10px
+}
+QPushButton:hover{
+    background-color: rgba(172, 206, 228, 228);
+}
+QPushButton:pressed{
+    
+	background-color: rgba(176, 184, 230, 228);
+}</string>
+      </property>
+      <property name="text">
+       <string>人机对战</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QPushButton" name="two_player_mode_button">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>55</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 14pt &quot;方正舒体&quot;;
+    
+	
+	background-color: rgba(169, 226, 223, 228);
+	border-radius: 10px
+}
+QPushButton:hover{
+    background-color: rgba(172, 206, 228, 228);
+}
+QPushButton:pressed{
+    
+	background-color: rgba(176, 184, 230, 228);
+}</string>
+      </property>
+      <property name="text">
+       <string>双人模式</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QPushButton" name="online_mode_button">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>55</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 14pt &quot;方正舒体&quot;;
+    
+	
+	background-color: rgba(169, 226, 223, 228);
+	border-radius: 10px
+}
+QPushButton:hover{
+    background-color: rgba(172, 206, 228, 228);
+}
+QPushButton:pressed{
+    
+	background-color: rgba(176, 184, 230, 228);
+}</string>
+      </property>
+      <property name="text">
+       <string>联机模式</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QPushButton" name="quit_game_button">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>55</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 14pt &quot;方正舒体&quot;;
+    
+	
+	background-color: rgba(169, 226, 223, 228);
+	border-radius: 10px
+}
+QPushButton:hover{
+    background-color: rgba(172, 206, 228, 228);
+}
+QPushButton:pressed{
+    
+	background-color: rgba(176, 184, 230, 228);
+}</string>
+      </property>
+      <property name="text">
+       <string>退出游戏</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>about_button</zorder>
+ </widget>
+ <resources>
+  <include location="../index.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>about_button</sender>
+   <signal>clicked()</signal>
+   <receiver>main_menu</receiver>
+   <slot>about()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>756</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>659</x>
+     <y>608</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quit_game_button</sender>
+   <signal>clicked()</signal>
+   <receiver>main_menu</receiver>
+   <slot>game_exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>445</x>
+     <y>512</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>561</x>
+     <y>514</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>human_computer_mode_button</sender>
+   <signal>clicked()</signal>
+   <receiver>main_menu</receiver>
+   <slot>human_computer_mode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>378</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>268</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>about()</slot>
+  <slot>setting()</slot>
+  <slot>game_exit()</slot>
+  <slot>human_computer_mode()</slot>
+ </slots>
+</ui>
